@@ -1,0 +1,30 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+<view class="content">
+	<view class="bg">
+		<view class="movie">
+			<view class="pic">
+				<image src="{{movie.pic}}" mode="aspectFit"></image>
+			</view>
+			<view class="movie-info">
+				<view class="base-info">
+					<view class="name">{{movie.name}}</view>
+					<view class="desc">{{movie.country}} | {{movie.year}}</view>
+					<view class="desc">类型: {{movie.type}}</view>
+					<view class="desc">导演: {{movie.dir}}</view>
+					<view class="desc">主演: {{movie.cast}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="operate">
+		<view class="opr">想看</view>
+		<view class="opr">看过</view>
+	</view>
+	<view class="intro">
+    <view>简介:</view>
+		{{movie.summary}}
+	</view>
+	<view class="buy">
+		立即购票
+	</view>
+</view>

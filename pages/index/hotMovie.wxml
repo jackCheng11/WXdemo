@@ -1,0 +1,32 @@
+<view class="haibao">
+	<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoPlay}}" interval="{{interval}}" duration="{{duration}}" style="height: 145px">
+		<block wx:for="{{imgUrls}}" wx:key="items">
+			<swiper-item>
+				<image src="{{item.url}}" class="slide-image" style="height: 145px;width: 100%"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+<view class="list">
+	<block wx:for="{{movies}}" wx:key="items">
+		<view class="movie" id="{{item.id}}" bindtap="loadMovieDetail">
+			<view class="pic">
+				<image src="{{item.pic}}" mode="aspectFit" style="width:85px;height:119px"></image>
+			</view>
+			<view class="movie-info">
+				<view class="base-info">
+					<view class="name">{{item.name}}</view>
+					<view class="desc">类型:{{item.type}}</view>
+					<view class="desc">导演:{{item.dir}}</view>
+          <view class="desc">主演:{{item.cast}}</view>
+					<view class="desc">上映:{{item.year}}</view>
+          <view class="desc" style="height:20px;overflow:hidden;width:160px;text-overflow: ellipsis;">简介:{{item.sunmary}}</view>
+				</view>
+			</view>
+			<view class="btns">
+				<button class="btn">购票</button>
+			</view>
+		</view>
+		<view class="hr"></view>
+	</block>
+</view>

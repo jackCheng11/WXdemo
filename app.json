@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/movie/movie",
+    "pages/me/me",
+    "pages/movieDetail/movieDetail",
+    "pages/login/login",
+    "pages/stroll/stroll"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "电影",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#fe4e62",
+    "list": [
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "./image/tabBar/dianying-1.png",
+        "selectedIconPath": "./image/tabBar/dianying.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "./image/tabBar/wode.png",
+        "selectedIconPath": "./image/tabBar/我def.png"
+      },
+      {
+        "pagePath": "pages/stroll/stroll",
+        "text": "逛逛",
+        "iconPath": "./image/tabBar/电视.png",
+        "selectedIconPath": "./image/tabBar/电视-1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}
